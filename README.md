@@ -26,9 +26,34 @@ Then edit env.json and save your changes
     "GWEI": "5",
     "AUTOSELL": "TRUE",  //if true then the bot will detect profits and sell for you
     "AUTOSELLPERCENT": "110",  //set the % profit to sell at
+    "STOPLOSSPERCENT": "5", //Pecentage stop loss
+    "SELLTOKENSIN-STAGES-X": "TRUE", //If you want only a portion to sell when auto sell percentage is hit, IF ITS YES THEN IT SELLS 3 TIMES, First time is based on Autosell percent
+    "SELLSTAGES-X2": "300",  //Second sell is based on this % increase
+    "SELLSTAGES-X3": "500",  //Third sell is based on this % increase
     "HONEYPOTCHECK": "TRUE", //if honeypot detection is on or off
     "MINLIQ": "1", //contract must have this amount of liq at minimum such as 1 eth or 1 bnb
     "MAXLIQ": "150" //contract must have this amount of liq at maximum such as 100 eth or 100 bnb
+}
+REMOVE COMMENTS SO IT LOOKS LIKE THIS BELOW:
+{
+    "PRIVATE_KEY": "REPLACEME",
+    "YOUR_ADDRESS": "REPLACEME",
+    "NODE": "PUT YOUR NODE HERE",
+    "TOKEN": "CONTRACTTOSNIPEADDRESSHERE",
+    "PRESALE": "false",
+    "INVESTMENT": "BNB OR ETHER VALUE HERE",
+    "GASLIMIT": "1000000",
+    "GWEI": "5",
+    "AUTOSELL": "TRUE",
+    "AUTOSELLPERCENT": "110",
+    "STOPLOSSPERCENT": "5",
+    "SELLTOKENSIN-STAGES-X": "TRUE",
+    "SELLSTAGES-X1": "2",
+    "SELLSTAGES-X2": "3",
+    "SELLSTAGES-X3": "10",
+    "HONEYPOTCHECK": "TRUE",
+    "MINLIQ": "1",
+    "MAXLIQ": "100"
 }
 ``` 
 
